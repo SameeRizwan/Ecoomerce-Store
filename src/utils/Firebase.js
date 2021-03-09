@@ -1,0 +1,84 @@
+import firebase from "firebase";
+
+firebase.initializeApp({
+  apiKey: process.env.REACT_APP_FIREBASE_KEY,
+  authDomain: process.env.REACT_APP_FIREBASE_DOMAIN,
+  databaseURL: process.env.REACT_APP_FIREBASE_DATABASE,
+  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_FIREBASE_SENDER_ID,
+});
+
+export const facebookAuth = async () => {
+  var provider = new firebase.auth.FacebookAuthProvider();
+  try {
+    const user = await firebase.auth().signInWithPopup(provider);
+    return user;
+  } catch (error) {
+    // var errorCode = error.code;
+    // var errorMessage = error.message;
+  }
+};
+
+export const googleAuth = async () => {
+  var provider = new firebase.auth.GoogleAuthProvider();
+  try {
+    const user = await firebase.auth().signInWithPopup(provider);
+    return user;
+  } catch (error) {
+    // var errorCode = error.code;
+    // var errorMessage = error.message;
+  }
+};
+
+export const FirebasesignIn = async (email, password) => {
+  try {
+    let user = await firebase
+      .auth()
+      .signInWithEmailAndPassword(email, password);
+    return user;
+  } catch (error) {
+    // var errorCode = error.code;
+    // var errorMessage = error.message;
+  }
+  // [END auth_signin_password]
+};
+
+export const FirebasesignUp = async (newUser) => {
+  try {
+    const { name, email, password } = newUser;
+
+    let user = await firebase
+      .auth()
+      .createUserWithEmailAndPassword(email, password);
+    sendEmailVerification(user);
+    return user;
+  } catch (error) {
+    // var errorCode = error.code;
+    // var errorMessage = error.message;
+  }
+};
+
+export const sendEmailVerification = (user) => {
+  let result;
+  try {
+    firebase.auth().user.sendEmailVerification();
+    result = "Email Send";
+    return result;
+  } catch (error) {
+    // var errorCode = error.code;
+    // var errorMessage = error.message;
+  }
+};
+
+export const sendPasswordReset = (email) => {
+  let result;
+  try {
+    firebase.auth().sendPasswordResetEmail(email);
+    result = "Email Send";
+    return result;
+  } catch (error) {
+    // var errorCode = error.code;
+    // var errorMessage = error.message;
+  }
+};
