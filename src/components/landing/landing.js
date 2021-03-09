@@ -1,5 +1,7 @@
 import React, { Fragment } from "react";
 import Banner from "../Banner/banner";
+import MiniBanner from "../Banner/MiniBanner";
+import Slider from "../Banner/Slider";
 import Header from "../Navigation/header";
 import ProductSection from "../Product/ProductSection";
 
@@ -8,7 +10,7 @@ const Landing = () => {
     <Fragment>
       <Header />
 
-      <Banner url="asserts/images/banners/1.jpg" />
+      <Slider url="asserts/images/banners/1.jpg" alt="HEY" />
 
       <section className="section-content padding-y-sm">
         <div className="container">
@@ -61,77 +63,13 @@ const Landing = () => {
         </div>
       </section>
 
+      <ProductSection title="New Products" />
+
+      <MiniBanner />
+
       <ProductSection title="Popular Products" />
 
-      <section className="section-content padding-bottom-sm">
-        <div className="container">
-          <header className="section-heading">
-            <a href="#" className="btn btn-outline-primary float-right">
-              See all
-            </a>
-            <h3 className="section-title">Recommended</h3>
-          </header>
-
-          <div className="row">
-            <div className="col-md-3">
-              <div href="#" className="card card-product-grid">
-                <a href="#" className="img-wrap">
-                  {" "}
-                  <img src="images/items/1.jpg" />{" "}
-                </a>
-                <figcaption className="info-wrap">
-                  <a href="#" className="title">
-                    Just another product name
-                  </a>
-                  <div className="price mt-1">$179.00</div>
-                </figcaption>
-              </div>
-            </div>
-            <div className="col-md-3">
-              <div href="#" className="card card-product-grid">
-                <a href="#" className="img-wrap">
-                  {" "}
-                  <img src="images/items/2.jpg" />{" "}
-                </a>
-                <figcaption className="info-wrap">
-                  <a href="#" className="title">
-                    Some item name here
-                  </a>
-                  <div className="price mt-1">$280.00</div>
-                </figcaption>
-              </div>
-            </div>
-            <div className="col-md-3">
-              <div href="#" className="card card-product-grid">
-                <a href="#" className="img-wrap">
-                  {" "}
-                  <img src="images/items/3.jpg" />{" "}
-                </a>
-                <figcaption className="info-wrap">
-                  <a href="#" className="title">
-                    Great product name here
-                  </a>
-                  <div className="price mt-1">$56.00</div>
-                </figcaption>
-              </div>
-            </div>
-            <div className="col-md-3">
-              <div href="#" className="card card-product-grid">
-                <a href="#" className="img-wrap">
-                  {" "}
-                  <img src="images/items/4.jpg" />{" "}
-                </a>
-                <figcaption className="info-wrap">
-                  <a href="#" className="title">
-                    Just another product name
-                  </a>
-                  <div className="price mt-1">$179.00</div>
-                </figcaption>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Banner url="asserts/images/banners/1.jpg" alt="HEY" />
 
       <footer className="section-footer border-top bg">
         <div className="container">

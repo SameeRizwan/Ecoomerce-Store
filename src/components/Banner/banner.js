@@ -6,7 +6,11 @@ const Banner = (props) => {
       <section className="section-intro padding-y-sm">
         <div className="container">
           <div className="intro-banner-wrap">
-            <img src={props.url} className="img-fluid rounded" alt="" />
+            <img
+              src={props.url}
+              className="img-fluid rounded"
+              alt={props.alt}
+            />
           </div>
         </div>
       </section>

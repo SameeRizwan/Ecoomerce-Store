@@ -10619,4 +10619,59 @@ a.text-gray-light:focus {
 button:focus {
   outline: none;
 }
+
+.carousel {
+  /* background: #2f4357; */
+  margin-top: 20px;
+}
+.carousel-item {
+  text-align: center;
+  min-height: 280px; /* Prevent carousel from being distorted if for some reason image doesn't load */
+}
+.minibanner {
+  width: 100%;
+  height: fit-content;
+}
+
+.img-hover-zoom {
+  background: #222f3e;
+  height: 300px;
+  overflow: hidden;
+  margin: 15px;
+}
+/* Brightness-zoom Container */
+.img-hover-zoom--brightness img {
+  transition: transform 2s, filter 1.5s ease-in-out;
+  transform-origin: center center;
+  filter: brightness(50%);
+}
+
+/* The Transformation */
+.img-hover-zoom--brightness:hover img {
+  filter: brightness(100%);
+  transform: scale(1.3);
+}
 /*# sourceMappingURL=bootstrap.css.map */
+.imgbutton {
+  position: absolute;
+  bottom: 30px;
+  right: 40px;
+  width: 100px;
+  height: 40px;
+  border: 2px solid;
+  text-align: center;
+  padding: 8px;
+  border-radius: 25px;
+}
+
+.imgbutton:hover {
+  border: 2px solid white;
+  color: white;
+}
+
+#img_container {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  border: 1px solid red;
+}
