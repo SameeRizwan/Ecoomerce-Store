@@ -1,4 +1,5 @@
 import React, { Fragment } from "react";
+import Banner from "../Banner/banner";
 import Header from "../Navigation/header";
 import ProductSection from "../Product/ProductSection";
 
@@ -7,17 +8,7 @@ const Landing = () => {
     <Fragment>
       <Header />
 
-      <section className="section-intro padding-y-sm">
-        <div className="container">
-          <div className="intro-banner-wrap">
-            <img
-              src="asserts/images/banners/1.jpg"
-              className="img-fluid rounded"
-              alt=""
-            />
-          </div>
-        </div>
-      </section>
+      <Banner url="asserts/images/banners/1.jpg" />
 
       <section className="section-content padding-y-sm">
         <div className="container">
