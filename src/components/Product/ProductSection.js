@@ -23,16 +23,6 @@ const ProductSection = (props) => {
       price: 179.0,
       url: "asserts/images/items/1.jpg",
     },
-    {
-      name: "Just another product name",
-      price: 179.0,
-      url: "asserts/images/items/1.jpg",
-    },
-    {
-      name: "Just another product name",
-      price: 179.0,
-      url: "asserts/images/items/1.jpg",
-    },
   ];
 
   return (

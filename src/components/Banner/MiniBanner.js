@@ -10,7 +10,7 @@ const MiniBanner = (props) => {
               <div class="img-hover-zoom img-hover-zoom--brightness">
                 <img
                   src="asserts/images/banners/1.jpg"
-                  alt="Another Image zoom-on-hover effect"
+                  alt="effect"
                   className="minibanner"
                 />
                 <div class="imgbutton">Shop Now</div>
@@ -20,7 +20,7 @@ const MiniBanner = (props) => {
               <div class="img-hover-zoom img-hover-zoom--brightness">
                 <img
                   src="asserts/images/banners/1.jpg"
-                  alt="Another Image zoom-on-hover effect"
+                  alt="effect"
                   className="minibanner"
                 />
                 <div class="imgbutton">Shop Now</div>
