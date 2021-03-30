@@ -5,7 +5,7 @@ import Card2 from "../Card/card2";
 import ProductSearch from "../Product/ProductSearch";
 import ProductCatagory from "../Product/ProductCatagory";
 
-const ProductPage = () => {
+const product = () => {
   const product = [
     {
       name: "Just another product name",
@@ -64,4 +64,4 @@ const ProductPage = () => {
   );
 };
 
-export default ProductPage;
+export default product;

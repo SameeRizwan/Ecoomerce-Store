@@ -6,7 +6,7 @@ import Footer from "../Navigation/footer";
 import Header from "../Navigation/header";
 import ProductSection from "../Product/ProductSection";
 
-const Landing = () => {
+const home = () => {
   return (
     <Fragment>
       <Header />
@@ -70,4 +70,4 @@ const Landing = () => {
   );
 };
 
-export default Landing;
+export default home;

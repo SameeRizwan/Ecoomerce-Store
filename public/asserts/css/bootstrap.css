@@ -4542,6 +4542,7 @@ input[type="button"].btn-block {
   .navbar-expand-lg .navbar-collapse {
     display: flex !important;
     flex-basis: auto;
+    justify-content: center;
   }
   .navbar-expand-lg .navbar-toggler {
     display: none;
@@ -10662,6 +10663,7 @@ button:focus {
   text-align: center;
   padding: 8px;
   border-radius: 25px;
+  background: none;
 }
 
 .imgbutton:hover {

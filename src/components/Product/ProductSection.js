@@ -33,8 +33,15 @@ const ProductSection = (props) => {
             <h3 className="section-title">{props.title}</h3>
           </header>
           <div className="row">
-            {product.map((ele) => {
-              return <Card name={ele.name} price={ele.price} url={ele.url} />;
+            {product.map((ele, index) => {
+              return (
+                <Card
+                  name={ele.name}
+                  price={ele.price}
+                  url={ele.url}
+                  key={index}
+                />
+              );
             })}
           </div>
         </div>

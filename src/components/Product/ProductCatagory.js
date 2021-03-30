@@ -5,8 +5,8 @@ const ProductCatagory = (props) => {
 
   catagories.push(
     <Fragment>
-      {props.options.map((ele) => {
-        return <option>{ele}</option>;
+      {props.options.map((ele, index) => {
+        return <option key={index}>{ele}</option>;
       })}
     </Fragment>
   );
